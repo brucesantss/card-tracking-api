@@ -38,15 +38,6 @@ O **case será resolvido em ~15-20 minutos**, com foco em corrigir **erros comun
 
 ---
 
-### 🏗 **Estrutura de Dados**
-```typescript
-type Card = {
-  id: string;
-  clientId: string;
-  cardType: "Crédito" | "Débito";
-  status: "Em produção" | "Em trânsito" | "Entregue";
-};
-
 ### 🚨 **Desafios a Resolver**
     - ❌ **Erro 1:** Validação ausente
 Pedidos com dados inválidos (ex.: clientId vazio) estavam sendo aceitos.
@@ -56,4 +47,13 @@ Código inicial sem TypeScript causava erros de runtime.
 
     - ❌ **Erro 3:** Respostas inconsistentes
 Status HTTP errados ou respostas sem formato definido.
+
+### 🏗 **Estrutura de Dados**
+```typescript
+type Card = {
+  id: string;
+  clientId: string;
+  cardType: "Crédito" | "Débito";
+  status: "Em produção" | "Em trânsito" | "Entregue";
+};
 
